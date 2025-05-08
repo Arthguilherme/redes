@@ -1,7 +1,7 @@
 import socket
 
 def send_message_to_server(addr: str, port: int):
-    server = socket.socket(socket.AF_NET, socket.SOCK_STREAM)
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.connect((addr, port))
     
     
